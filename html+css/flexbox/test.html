@@ -60,10 +60,17 @@
 			.uinfo > .location    { order: 2; }
 			.uinfo > .postcounter { order: 7; }
 			.uinfo > .likecounter { order: 8; }
+			.uinfo > .misc        { order: 1; }
 
-			.uinfo > .location
+			.uinfo > .location, .uinfo > .postcounter,
+			.uinfo > .nothing
 			{
 				margin-top: 10px;
+			}
+
+			.uinfo > :empty
+			{
+				border-top: 1px solid red;
 			}
 
 		</style>
@@ -90,6 +97,7 @@
 						<span class="key">Beiträge</span>
 						<span class="value">2.117</span>
 					</div>
+					<div class="nothing"></div>
 				</div>
 			</div>
 			<div class="msg">
@@ -113,11 +121,24 @@
 						<span class="key">Beiträge</span>
 						<span class="value">2.117</span>
 					</div>
+					<div class="nothing">
+						<span class="key">WTF</span>
+						<span class="value">LMAA</span>
+					</div>
 				</div>
 			</div>
 			<div class="msg">
 				World?
 				<br /><br />
+				This
+				<br />
+				is
+				<br />
+				a
+				<br />
+				stupid
+				<br />
+				test...<br /><br />
 				This
 				<br />
 				is
