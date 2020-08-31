@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>...</title>
+		<style>
+
+			.post
+			{
+				margin: 10px;
+				border: 1px solid green;
+				border-radius: 5px;
+				display: flex;
+			}
+
+			.author, .msg
+			{
+				margin: 5px;
+				padding: 5px;
+			}
+
+			.author
+			{
+				border: 1px solid lightblue;
+				border-radius: 2px;
+				flex: 0;
+				flex-grow: 0;
+				flex-shrink: 0;
+				flex-basis: 200px;
+			}
+
+			.author > p
+			{
+				margin: 0px;
+				margin-bottom: 10px;
+			}
+
+			.msg
+			{
+				flex: 1;
+			}
+
+			.uinfo
+			{
+				display: flex;
+				flex-direction: column;
+			}
+
+			.uinfo .key
+			{
+				font-weight: bold;
+			}
+
+			.uinfo .key::after
+			{
+				content: ":";
+			}
+
+			.uinfo > .location    { order: 2; }
+			.uinfo > .postcounter { order: 7; }
+			.uinfo > .likecounter { order: 8; }
+
+			.uinfo > .location
+			{
+				margin-top: 10px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="post">
+			<div class="author">
+				<p>User #1</p>
+
+				<div class="uinfo">
+					<div class="likecounter">
+						<span class="key">Likes</span>
+						<span class="value">512</span>
+					</div>
+					<div class="location">
+						<span class="key">Wohnort</span>
+						<span class="value">Wien</span>
+					</div>
+					<div class="misc">
+						<span class="key">Test</span>
+						<span class="value">Nein</span>
+					</div>
+					<div class="postcounter">
+						<span class="key">Beiträge</span>
+						<span class="value">2.117</span>
+					</div>
+				</div>
+			</div>
+			<div class="msg">
+				Hello!
+			</div>
+		</div>
+		<div class="post">
+			<div class="author">
+				<p>User #2</p>
+
+				<div class="uinfo">
+					<div class="likecounter">
+						<span class="key">Likes</span>
+						<span class="value">512</span>
+					</div>
+					<div class="location">
+						<span class="key">Wohnort</span>
+						<span class="value">Wien</span>
+					</div>
+					<div class="postcounter">
+						<span class="key">Beiträge</span>
+						<span class="value">2.117</span>
+					</div>
+				</div>
+			</div>
+			<div class="msg">
+				World?
+				<br /><br />
+				This
+				<br />
+				is
+				<br />
+				a
+				<br />
+				stupid
+				<br />
+				test...
+			</div>
+		</div>
+	</body>
+</html>
